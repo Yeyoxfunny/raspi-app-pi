@@ -28,6 +28,7 @@ board.on("ready", function() {
     console.log(delay);
     myShutdown = setTimeout(function() {
       led.toggle();
+      isLedOn = !isLedOn;
       socket.emit("togglePi", { isOn: isLedOn, isPong: true });
     }, delay);
   });
