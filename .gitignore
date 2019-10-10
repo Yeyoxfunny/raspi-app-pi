@@ -3,3 +3,4 @@ DS_Store
 # Dependency directories
 node_modules/
 bower_components/
+package-lock.json
